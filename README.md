@@ -1,4 +1,4 @@
-Task Board Project
+# Task Board Project
 
 Keep track / record of your tasks using HTML, JS & CSS.
 
