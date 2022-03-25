@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Code+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <!-- Icon's link -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- JS File -->
+    <script src="index.js" defer></script>
+    <title>My Task Board</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">My Task Board </div>
+        <!-- Form inputs -->
+        <div class="form-container">
+            <form id="taskForm" onsubmit="addTask(event)">
+                <div class="inputs-container">
+                    <!-- task input -->
+                    <input id="taskInput" class="inputs form-control form-control-sm" type="text"
+                        placeholder="Enter your task" required>
+                    <!-- date input -->
+                    <input id="taskDate" class="inputs form-control form-control-sm" id="date" type="text"
+                        placeholder="DD-MM-YYYY" required>
+                    <!-- hour input -->
+                    <input id="taskTime" class="inputs form-control form-control-sm" type="time"
+                        placeholder="Enter your due hour">
+                </div>
+                <!-- submit button input -->
+                <div class="buttons-container">
+                    <button type="submit" class="submit-btn btn btn-success btn-sm">Submit your task.</button>
+                    <button type="reset" class="reset-btn btn btn-danger btn-sm">Reset your text field</button>
+                </div>
+            </form>
+        </div>
+        <div id="notes-container"></div>
+    </div>
+</body>
+
+</html>
